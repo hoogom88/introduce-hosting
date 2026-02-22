@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>안녕하세요. '전종현'입니다!</title>
 
-  <title>안녕하세요. '전종현'입니다!</title>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RY439XXSXR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-RY439XXSXR");
+</script>
+<!-- End GA -->
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY439XXSXR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-RY439XXSXR");
-  </script>
-  <!-- End Google Analytics -->
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .pdf-container {
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .pdf-container {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
 
 <body>
   <div class="pdf-container">
-    <iframe
-        src="https://docs.google.com/gview?url=https://hoogom88.github.io/introduce-hosting/introduce.pdf&embedded=true"
-        style="width:100%; height:100vh;"
-        frameborder="0">
-    </iframe>
+    <object
+      data="https://hoogom88.github.io/introduce-hosting/introduce.pdf"
+      type="application/pdf"
+      width="100%"
+      height="100%">
+      <!-- PDF 렌더가 안 되는 경우의 대체 링크 -->
+      <p>
+        PDF 뷰어에서 열리지 않습니다.  
+        <a href="https://hoogom88.github.io/introduce-hosting/introduce.pdf" target="_blank">여기 클릭해서 PDF 보기</a>
+      </p>
+    </object>
   </div>
 </body>
 </html>
